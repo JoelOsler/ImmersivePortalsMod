@@ -1126,7 +1126,8 @@ public class PortalCommand {
         sendMessage(context, portal.toString());
     }
 
-    private static void invokeSetPortalNBT(CommandContext<ServerCommandSource> context, Portal portal) throws CommandSyntaxException {
+    private static void invokeSetPortalNBT(
+        CommandContext<ServerCommandSource> context, Portal portal) throws CommandSyntaxException {
 
         CompoundTag newNbt = NbtCompoundTagArgumentType.getCompoundTag(
             context, "nbt"
